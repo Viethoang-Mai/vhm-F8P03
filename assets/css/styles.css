@@ -12,6 +12,7 @@ html {
 body {
     font-family: "Sora", sans-serif;
     font-size: 1.6rem;
+    line-height: 1.6;
 }
 /* COMMON */
 .container {
@@ -23,9 +24,21 @@ body {
 a {
     text-decoration: none;
 }
+.btn {
+    display: inline-block;
+    padding: 17px 70px;
+    min-width: 205px;
+    background: #2e80ce;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #ffffff;
+}
 
 /* Header */
 .header {
+    padding-top: 30px;
     min-height: 100vh;
     background: var(--bgr-HF);
 }
@@ -71,4 +84,54 @@ a {
 .logo__brand--small {
     font-weight: 300;
     font-size: 1.2em;
+}
+
+/* header top */
+.header-top {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 4px 21px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #c9d2da;
+}
+.navbar__item:hover,
+.navbar__item--active {
+    text-shadow: 1px 0 0 currentColor;
+    color: #fff;
+}
+
+.navbar__item--active::before {
+    position: relative;
+    top: -2px;
+    left: -8px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+    content: " ";
+}
+
+.action__login {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #c9d2da;
+}
+.action__signup {
+    min-width: 104px;
+    padding: 9px 19px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-left: 28px;
 }
